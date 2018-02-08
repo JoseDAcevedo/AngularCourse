@@ -12,6 +12,10 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
+//Rutas
+import { APP_ROUTES } from './app.routes';
+import { PagesComponent } from './pages/pages.component';
+
 
 @NgModule({
   declarations: [
@@ -23,10 +27,12 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    PagesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]

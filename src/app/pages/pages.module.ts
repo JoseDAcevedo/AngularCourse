@@ -17,6 +17,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 //temporal
 import { IncrementComponent } from '../components/increment/increment.component';
 import { GraficodonaComponent } from '../components/graficodona/graficodona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { GraficodonaComponent } from '../components/graficodona/graficodona.comp
         ProgressComponent,
         Graficas1Component,
         IncrementComponent,
-        GraficodonaComponent
+        GraficodonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         HomeComponent,

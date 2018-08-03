@@ -5,7 +5,9 @@ import {SettingsService,
         SharedService, 
         SidebarService, 
         UsuarioService, 
-        LoginGuardGuard} 
+        LoginGuardGuard,
+        SubirArchivoService
+      } 
         from './service.index';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     SettingsService,
     SidebarService,
     SharedService,
+    SubirArchivoService,
     LoginGuardGuard
   ],
   declarations: []

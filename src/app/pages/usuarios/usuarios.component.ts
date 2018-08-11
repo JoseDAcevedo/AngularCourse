@@ -28,6 +28,7 @@ export class UsuariosComponent implements OnInit {
           .subscribe(resp=>this.cargarUsuarios());
   }
 
+//Modal de carga de imágenes
   mostrarModal( id:string ){
     this._modalUploadService.mostrarModal('usuarios', id);
   }
@@ -98,7 +99,6 @@ export class UsuariosComponent implements OnInit {
       if (result.value) {
         this._usuarioService.borrarUsuario(usuario._id)
               .subscribe(borrado => {
-                console.log(borrado);
                 this.cargarUsuarios();
               });
 

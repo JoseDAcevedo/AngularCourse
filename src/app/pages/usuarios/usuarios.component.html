@@ -70,7 +70,7 @@
           <button *ngIf="desde > 0" (click)="cambiarDesde(-5)" class="btn btn-secondary">
             Anteriores
           </button>
-          <button *ngIf="desde+5 <= totalRegistros" (click)="cambiarDesde(5)" class="btn btn-secondary">
+          <button *ngIf="desde+5 < totalRegistros" (click)="cambiarDesde(5)" class="btn btn-secondary">
             Siguientes
           </button>
   

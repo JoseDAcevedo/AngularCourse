@@ -15,7 +15,7 @@ export class LoginGuardGuard implements CanActivate {
     if(this._usuarioService.estaLogueado()){
       return true;
     } else {
-      swal('No ha iniciado sesión', 'Por favor iniciar sesión con una cuenta', 'warning');
+      swal('Acceso denegado', 'Su cuenta no existe o no es válida para realizar esta acción', 'warning');
       this.router.navigate(['/login']);
       return false;
     }

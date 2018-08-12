@@ -8,6 +8,7 @@ import {SettingsService,
         HospitalService,
         MedicoService,
         LoginGuardGuard,
+        AdminGuard,
         SubirArchivoService
       } 
         from './service.index';
@@ -28,6 +29,7 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     SharedService,
     SubirArchivoService,
     LoginGuardGuard,
+    AdminGuard,
     ModalUploadService
   ],
   declarations: []

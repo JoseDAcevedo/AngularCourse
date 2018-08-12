@@ -52,7 +52,7 @@ attachSignin( element ){
     let token = googleUser.getAuthResponse().id_token;
 
     this._usuarioService.loginGoogle(token)
-          .subscribe( () => window.location.href = '/home' );
+          .subscribe( () => window.location.href = '/#/home' );
 
   });
 

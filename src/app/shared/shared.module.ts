@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
 
+//Componentes compartidos
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 //Pipes module
 import { PipesModule } from '../pipes/pipes.module';
@@ -22,13 +24,15 @@ import { PipesModule } from '../pipes/pipes.module';
         BreadcrumbsComponent,
         HeaderComponent,
         NopagefoundComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent
     ],
     exports: [
         BreadcrumbsComponent,
         HeaderComponent,
         NopagefoundComponent,
-        SidebarComponent
+        SidebarComponent,
+        ModalUploadComponent
     ]
 })
 

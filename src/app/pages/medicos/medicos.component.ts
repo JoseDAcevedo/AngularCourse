@@ -21,7 +21,7 @@ export class MedicosComponent implements OnInit {
   }
 
   cargarMedicos(){
-    this._medicoService.cargarMedicos()
+    this._medicoService.cargarMedicos(this.desde)
           .subscribe(medicos => this.medicos = medicos);
   }
 
@@ -44,10 +44,9 @@ export class MedicosComponent implements OnInit {
   }
 
   //Variable de paginación
-  cambiarDesde(valor:number){
+  cambiarDesde(valor:number = 0){
 
     let desde = this.desde + valor;
-
     if(desde >= this._medicoService.totalMedicos){
       return;
     }

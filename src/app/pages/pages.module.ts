@@ -6,10 +6,6 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts'; //ng2-charts
-import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
-
-//Componente principal
-import { PagesComponent } from './pages.component';
 
 //Componentes de contenido
 import { HomeComponent } from './home/home.component';
@@ -35,7 +31,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 
 @NgModule({
     declarations: [
-        PagesComponent,
+        // PagesComponent,
         HomeComponent,
         ProgressComponent,
         Graficas1Component,
@@ -46,7 +42,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
         RxjsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent,
+        // ModalUploadComponent,
         HospitalesComponent,
         MedicosComponent,
         MedicoComponent,

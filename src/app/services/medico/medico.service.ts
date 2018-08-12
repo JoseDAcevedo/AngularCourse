@@ -18,9 +18,9 @@ export class MedicoService {
   ) { }
 
   //GET de todos los médicos
-  cargarMedicos(){
+  cargarMedicos(desde: number = 0){
 
-    let url = URL_SERVICIOS + '/medico';
+    let url = URL_SERVICIOS + '/medico?desde=' + desde;
 
     return this.http.get(url)
               .map((resp:any) =>{
